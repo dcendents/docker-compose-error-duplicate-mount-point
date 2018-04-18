@@ -1,0 +1,12 @@
+version: '3.2'
+services:
+  svc:
+    build:
+      context: .
+    volumes:
+     - type: volume
+       source: vol
+       target: /mnt
+    command: ping google.com
+volumes:
+  vol:
