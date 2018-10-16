@@ -1,8 +1,10 @@
-version: '3.2'
+version: '3.4'
 services:
   svc:
+    container_name: container_name
     build:
       context: .
+      target: production
     volumes:
      - type: volume
        source: vol
